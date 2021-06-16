@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <!--META information-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Random Quote Generator" />
+    <meta name="keywords" content="HTML,CSS,JavaScript, Quotes, API" />
+    <meta name="author" content="Njokosi Jones" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--End of META information-->
+
+    <title>Generate random Quotes</title>
+
+    <!--LINK CUSTOM CSS FILE-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!--FONTAWESOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="big-heading">
+        <i class="fas fa-quote-left"></i>
+        <span class="quote" id="quote"></span>
+        <i class="fas fa-quote-right"></i>
+      </h1>
+      <p class="author" id="author"></p>
+
+      <hr />
+      <div class="buttons">
+        <a
+          class="twitter"
+          id="tweet"
+          data-size="large"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!--add an onclick event on 'next quote' button-->
+        <button class="next" onclick="getNewQuote()">Next quote</button>
+      </div>
+    </div>
+
+    <!--LINK CUSTOM JS FILE-->
+    <script src="script.js"></script>
+  </body>
+</html>
